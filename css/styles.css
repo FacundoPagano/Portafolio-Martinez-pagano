@@ -1,0 +1,380 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.link-activo{
+    color: rgb(240, 63, 63);
+    text-decoration: none;
+}
+.cuerpo{
+    background-color: black;
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(12, 11, 11, 0.877);
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.grid-index{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "presentacion presentacion"
+    "sobre-mi habilidades";
+    grid-template-rows: 500px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px white solid;
+    margin: 5px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.item{
+    display: inline-block;
+    margin: 20px;
+}
+
+.presentacion{
+    display: flex;
+    background-image: url(../assets/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    grid-area: presentacion;
+}
+.presentacion-contenedor{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    z-index: 1;
+}
+.fondo-opaco{
+    background-color: rgba(0, 0, 0, 0.822);
+    position: absolute;
+    height: 500px;
+    width: 100%;
+}
+.perfil-medio{
+    height: 160px;
+    width: 160px;
+    border: 2px white solid;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.perfil-pie{
+    font-size: 70px;
+    text-align: center;
+}
+.sobre-mi{
+    color: white;
+    text-align: center;
+    background-color: rgb(17, 14, 14);
+    border: 1px black solid;
+    height: fit-content;
+    padding-bottom: 5%;
+    grid-area: sobre-mi;
+}
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 5%;
+}
+.parrafo{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+.boton{
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+/* Los bordes son para guiarme en las divisiones de las seccion, luego en el resultado final no estaran*/
+.habilidades{
+    color: white;
+    text-align: center;
+    background-color: rgb(17, 14, 14);
+    grid-area: habilidades;
+}
+.habilidad1{
+    height: 160px;
+    width: 160px;
+    margin: 3%;
+}
+.habilidades-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fa-brands{
+    width: 30px;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 10px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.pie-de-pagina{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black ;
+    color: antiquewhite;
+    width: 100%;
+    position: absolute;
+}
+.conjunto-logos{
+    width: fit-content;
+    padding-right: 1%;
+}
+
+.secciones{
+    display: flex;
+    flex-direction: row;
+}
+.mail{
+    padding-left: 1%;
+}
+.firma{
+    padding-left: 2%;
+}
+.firma-1{
+    padding-right: 1%;
+}
+.sec-comentarios{
+    background-color: rgb(4, 4, 58);
+    height: fit-content;
+    margin: 0 auto;
+    padding: 1%;
+}
+.comentarios{
+    display: flex;
+    background-color: rgb(189, 196, 202);
+    border: 1px solid rgb(255, 254, 254);
+    height: fit-content;
+    width: 97%;
+    border: 1px rgb(0, 0, 0) solid;
+    margin: 8px;
+    font-size: 22px;
+    padding: 1%;
+}
+.subtitulo{
+    font-size: 40px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    color: rgb(179, 187, 194);
+}
+.nombre{
+    font-size: 27px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.avatar{
+    padding-right: 10px;
+    height: 80px;
+    width: 80px;
+}
+.grid{
+    background-color: rgb(66, 66, 70);
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-item{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 40px;
+}
+.nombre-proyecto{
+    margin-bottom: 100px;
+}
+.proyectos-hoja{
+    width: 100%;
+    height: fit-content;
+}
+.proyectos{
+    margin: 12%;
+    height: 70%;
+    width: 70%;
+    background-color: rgb(158, 153, 153);
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.servicios{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(66, 66, 70);
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.servicio-izquierda{
+    display: flex;
+    background-color:rgb(158, 153, 153) ;
+    width: 90%;
+    height: fit-content;
+    border: 1px black solid;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+.servicio-derecha{
+    display: flex;
+    background-color: rgb(158, 153, 153);
+    flex-direction: row-reverse;
+    height: fit-content;
+    width: 90%;
+    border: 1px black solid;
+    margin-left: 8%;
+    font-size: 25px;
+}
+.imagen-servicio{
+    height: 80px;
+    width: 80px;
+    padding: 2%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario-casilla{
+    margin-bottom: 3%;
+    width: 60%;
+    height: 50px;
+}
+.formulario-casilla-mensaje{
+    display: flex;
+    width: 60%;
+    margin-bottom: 3%;
+    height: 200px;
+    font-size: 20px;
+}
+
+.sec-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(4, 4, 58);
+    height: fit-content;
+    margin: 0 auto;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-bottom: 50px;
+}
+.subtitulo-2{
+    font-size: 40px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: rgb(179, 187, 194);
+}
+.redes-sociales-1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+@media only screen and (max-width: 1300px){
+    .redes-sociales-1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+}
+    @media only screen and (max-width: 1150px){
+    .habilidad1{
+            height: 150px;
+            width: 150px;
+    }
+    .habilidades-contenedor{
+            flex-direction: column;
+            align-items: center;
+    }
+}
+@media only screen and (max-width:860px) {
+    .cabecera{ justify-content: flex-start;}
+    .item{ margin: 5px;}
+    .titulo{font-size: 30px;}
+    .grid{
+        background-color: rgb(66, 66, 70);
+        height: fit-content;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 700px){
+    .pie-de-pagina{
+        font-size: small;
+    }
+    .fa-brands{
+        height: auto;
+        width: auto;
+    }
+    .perfil-pie{ font-size: 40px;}
+    .parrafo{
+        font-size: 35px;
+    }
+    
+}
+@media only screen and (max-width: 650px){
+    .grid{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    .parrafo{ font-size: 20px;}
+    .item{ font-size: 12px;}
+    .servicio-derecha{font-size: 15px;}
+    .servicio-izquierda{font-size: 15px;}
+    .titulo{ font-size: 20px;}
+    .parrafo{ font-size: 18px;}
+}
