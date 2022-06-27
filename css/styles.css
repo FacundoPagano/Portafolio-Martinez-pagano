@@ -423,8 +423,7 @@
 @media only screen and (max-width: 480px) {
 
     .parrafo{ font-size: 20px;}
-    .item{ 
-        font-size: 12px;}
+    .item{ font-size: 12px;}
     .servicio-derecha{font-size: 15px;}
     .servicio-izquierda{font-size: 15px;}
     .titulo{ font-size: 20px;}
