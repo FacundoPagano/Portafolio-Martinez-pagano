@@ -117,6 +117,10 @@
     border-radius: 15px;
     font-size: 20px;
     padding: 10px;
+    transition: all 1s;
+}
+.boton:hover{
+    transform: scale(0.5);
 }
 /* Los bordes son para guiarme en las divisiones de las seccion, luego en el resultado final no estaran*/
 .habilidades{
