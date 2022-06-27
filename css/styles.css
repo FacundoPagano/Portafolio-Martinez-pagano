@@ -51,6 +51,10 @@
     display: inline-block;
     margin: 20px;
 }
+/* Agrego animaciones a los item del header de todas las paginas */
+.item:hover{
+    transform: scale(1.4);
+}
 
 .presentacion{
     display: flex;
@@ -83,14 +87,22 @@
     border: 2px white solid;
     border-radius: 50%;
     margin-bottom: 20px;
+    transition: all 1s;
+}
+/* Agrego una animacion a mi foto de pefil en la seccion presentacion del Index */
+.perfil-medio:hover{
+    transform: scale(1.2);
 }
 .perfil-pie{
     font-size: 70px;
     text-align: center;
 }
+/* Modifique la parte de sobre mi para que el boton del curriculum funcione correctamente */
 .sobre-mi{
+    display: flex;
+    flex-direction: column;
     color: white;
-    text-align: center;
+    align-items: center;
     background-color: rgb(17, 14, 14);
     border: 1px black solid;
     height: fit-content;
@@ -109,14 +121,30 @@
     font-size: 30px;
     margin-bottom: 3%;
 }
+/* Se modifico esto para que se pueda utilizar el boton y tenga animación */
+.curriculum{
+    width: fit-content;
+    text-align: center;
+}
+.curriculum-texto{
+    text-decoration: none;
+    color: black;
+}
 .boton{
     color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     font-size: 20px;
     padding: 10px;
+}
+/* Agrego animacion a los botones tanto el enviar del html Contacto como al de mi curriculum en el index */
+.boton-animacion{
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+.boton:hover{
+    transform: scale(1.2);
 }
 /* Los bordes son para guiarme en las divisiones de las seccion, luego en el resultado final no estaran*/
 .habilidades{
@@ -145,6 +173,7 @@
     color: whitesmoke;
     font-size: 30px;
 }
+
 .pie-de-pagina{
     margin: auto;
     display: flex;
@@ -211,7 +240,7 @@
     background-color: rgb(66, 66, 70);
     height: fit-content;
     display: grid;
-    grid-template-rows: 500px 500px 500px;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-item{
@@ -223,7 +252,7 @@
     font-size: 40px;
 }
 .nombre-proyecto{
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .proyectos-hoja{
     width: 100%;
@@ -240,6 +269,11 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    transition: all 0.5s;
+}
+/* Agrego animaciones a la imagenes que llevan a mis proyectos en el pagina "proyectos" */
+.proyectos:hover{
+    transform: scale(1.2);
 }
 .servicios{
     height: fit-content;
@@ -311,13 +345,36 @@
     padding-top: 1%;
     padding-bottom: 2%;
     color: rgb(179, 187, 194);
+    margin-bottom: 5px;
 }
 .redes-sociales-1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
-@media only screen and (max-width: 1300px){
+.red{
+    transition: all 0.5s;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* Agrego animaciones en las redes de la pagina "contacto" */
+.red:hover{
+    transform: scale(1.2)
+}
+.pie-contacto{
+    height: 35px;
+}
+@media only screen and (max-width: 1150px){
+    .habilidad1{
+        height: 150px;
+        width: 150px;
+    }
+    .habilidades-contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1000px){
     .redes-sociales-1{
         display: flex;
         flex-direction: column;
@@ -326,21 +383,10 @@
         justify-items: center;
         align-items: center;
     }
-}
-    @media only screen and (max-width: 1150px){
-    .habilidad1{
-            height: 150px;
-            width: 150px;
+    .red{
+        padding: 20px;
     }
-    .habilidades-contenedor{
-            flex-direction: column;
-            align-items: center;
-    }
-}
-@media only screen and (max-width:860px) {
-    .cabecera{ justify-content: flex-start;}
-    .item{ margin: 5px;}
-    .titulo{font-size: 30px;}
+
     .grid{
         background-color: rgb(66, 66, 70);
         height: fit-content;
@@ -348,6 +394,11 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+}
+@media only screen and (max-width:860px) {
+    .cabecera{ justify-content: flex-start;}
+    .item{ margin: 5px;}
+    .titulo{font-size: 30px;}
 }
 @media only screen and (max-width: 700px){
     .pie-de-pagina{
@@ -359,7 +410,7 @@
     }
     .perfil-pie{ font-size: 40px;}
     .parrafo{
-        font-size: 35px;
+        font-size: 25px;
     }
     
 }
