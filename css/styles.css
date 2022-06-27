@@ -397,7 +397,7 @@
 }
 @media only screen and (max-width:860px) {
     .cabecera{ justify-content: flex-start;}
-    .item{ margin: 5px;}
+    .item{ margin: 10px;}
     .titulo{font-size: 30px;}
 }
 @media only screen and (max-width: 700px){
@@ -423,7 +423,8 @@
 @media only screen and (max-width: 480px) {
 
     .parrafo{ font-size: 20px;}
-    .item{ font-size: 12px;}
+    .item{ 
+        font-size: 12px;}
     .servicio-derecha{font-size: 15px;}
     .servicio-izquierda{font-size: 15px;}
     .titulo{ font-size: 20px;}
