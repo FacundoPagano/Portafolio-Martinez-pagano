@@ -2,30 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
-.link{
-    color: white;
-    text-decoration: none;
-}
-.link-activo{
-    color: rgb(240, 63, 63);
-    text-decoration: none;
-}
-.cuerpo{
+.body{
     background-color: black;
 }
-.cabecera{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(12, 11, 11, 0.877);
-    width: 100%;
-    height: 70px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
 .grid-index{
     display: grid;
     gap: 5px;
@@ -35,24 +14,27 @@
     grid-template-rows: 500px 1fr;
     grid-template-columns: 1fr 1fr;
 }
+.cabecera{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+}
 .perfil{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 1px white solid;
+    border: 1px rgb(240, 227, 227) solid;
     margin: 5px;
+    transition: 0.5s;
 }
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-.item{
-    display: inline-block;
-    margin: 20px;
+.perfil:hover{
+    transform: scale(1.5);
 }
 /* Agrego animaciones a los item del header de todas las paginas */
-.item:hover{
+
+.items-menu:hover{
     transform: scale(1.4);
 }
 
@@ -188,11 +170,6 @@
     width: fit-content;
     padding-right: 1%;
 }
-
-.secciones{
-    display: flex;
-    flex-direction: row;
-}
 .mail{
     padding-left: 1%;
 }
@@ -236,45 +213,7 @@
     height: 80px;
     width: 80px;
 }
-.grid{
-    background-color: rgb(66, 66, 70);
-    height: fit-content;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.grid-item{
-    border: 1px black solid;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    font-size: 40px;
-}
-.nombre-proyecto{
-    margin-bottom: 20px;
-}
-.proyectos-hoja{
-    width: 100%;
-    height: fit-content;
-}
-.proyectos{
-    margin: 12%;
-    height: 70%;
-    width: 70%;
-    background-color: rgb(158, 153, 153);
-    border: 1px white solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    transition: all 0.5s;
-}
-/* Agrego animaciones a la imagenes que llevan a mis proyectos en el pagina "proyectos" */
-.proyectos:hover{
-    transform: scale(1.2);
-}
+
 .servicios{
     height: fit-content;
     width: 100%;
@@ -302,6 +241,21 @@
     border: 1px black solid;
     margin-left: 8%;
     font-size: 25px;
+}
+.proyectos-grid{
+    background-color: rgb(17, 16, 16);
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.proyecto-card{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+.card-link{
+    text-decoration: none;
 }
 .imagen-servicio{
     height: 80px;
@@ -364,6 +318,14 @@
 .pie-contacto{
     height: 35px;
 }
+@media only screen and (max-width: 1300px) {
+    .proyectos-grid{
+        height: fit-content;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media only screen and (max-width: 1150px){
     .habilidad1{
         height: 150px;
@@ -386,19 +348,16 @@
     .red{
         padding: 20px;
     }
-
-    .grid{
-        background-color: rgb(66, 66, 70);
-        height: fit-content;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
 }
 @media only screen and (max-width:860px) {
-    .cabecera{ justify-content: flex-start;}
     .item{ margin: 10px;}
     .titulo{font-size: 30px;}
+    .proyectos-grid{
+        height: fit-content;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
 }
 @media only screen and (max-width: 700px){
     .pie-de-pagina{
@@ -411,13 +370,6 @@
     .perfil-pie{ font-size: 40px;}
     .parrafo{
         font-size: 25px;
-    }
-    
-}
-@media only screen and (max-width: 650px){
-    .grid{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
     }
 }
 @media only screen and (max-width: 480px) {

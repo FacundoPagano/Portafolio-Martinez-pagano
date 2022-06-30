@@ -6,35 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Proyectos</title>
 </head>
-<body>
+<body class="body">
     <header class="cabecera">
-        <img class="perfil" src="../assets/Yo.png" alt="Facundo Martínez Pagano">
-        <nav>
-            <ul class="menu">
-                <li class="item"><a class="link" href="../index.html">Inicio</a></li>
-                <li class="item"><a class="link-activo" href="proyectos.html">Proyectos</a></li>
-                <li class="item"><a class="link" href="servicios.html">Servicios</a></li>
-                <li class="item"><a class="link" href="contacto.html">Contacto</a></li>
-                <li class="item"><a class="link" href="comentarios.html">Comentarios</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:#020202a8;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="servicios.html"><img src="../assets/Yo.png" class="perfil" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" id="menu">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
     </header>
 
     <!-- La idea en este apartado es poner mis proyectos, utilizando hipervinculos para llevarlos hasta la pagina y una imagen como previsualizacion -->
-    <main class="proyectos-hoja">
-        <section class="grid">
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-            <div class="grid-item"><div class="proyectos"><img src="../assets/Imagen-ejemplo.png" alt="imagen pagina web"></div><p class="nombre-proyecto">Nombre de la web</p></div>
-        </section>
+    <!-- Luego adaptaremos cada imagen para que entre correctamente en el carrousel -->
+    <main class="proyectos-grid">
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
+      <div class="card proyecto-card" style="width: 22rem;">
+        <img src="../assets/Imagen-ejemplo-2.png" class="card-img-top" alt="Pagina Web">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de la pagina web</h5>
+          <p class="card-text">Descripcion de la pagina, fecha de creacion, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="proyectos.html" class="card-link">Link de la pagina web X</a>
+        </div>
+      </div>
     </main>
     <!-- En esta pagina se veran los distintos proyectos en los que trabaje -->
 
@@ -49,5 +137,6 @@
             <a href="https://github.com/FacundoPagano" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </Footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
