@@ -9,10 +9,11 @@
     display: grid;
     gap: 5px;
     grid-template-areas: 
-    "presentacion presentacion"
-    "sobre-mi habilidades";
-    grid-template-rows: 500px 1fr;
-    grid-template-columns: 1fr 1fr;
+    "presentacion"
+    "sobre-mi"
+    "habilidades";
+    grid-template-rows: 500px 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .cabecera{
     position: sticky;
@@ -136,8 +137,6 @@
     grid-area: habilidades;
 }
 .habilidad1{
-    height: 160px;
-    width: 160px;
     margin: 3%;
 }
 .habilidades-contenedor{
@@ -243,8 +242,7 @@
     font-size: 25px;
 }
 .proyectos-grid{
-    background-color: rgb(17, 16, 16);
-    height: fit-content;
+    background-color: rgb(78, 23, 23);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -351,7 +349,6 @@
 }
 @media only screen and (max-width:860px) {
     .item{ margin: 10px;}
-    .titulo{font-size: 30px;}
     .proyectos-grid{
         height: fit-content;
         display: grid;
@@ -367,17 +364,13 @@
         height: auto;
         width: auto;
     }
-    .perfil-pie{ font-size: 40px;}
-    .parrafo{
-        font-size: 25px;
+    .perfil-pie{
+        font-size: 40px;
     }
 }
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 480px){
     .parrafo{ font-size: 20px;}
     .item{ font-size: 12px;}
     .servicio-derecha{font-size: 15px;}
     .servicio-izquierda{font-size: 15px;}
-    .titulo{ font-size: 20px;}
-    .parrafo{ font-size: 18px;}
 }
