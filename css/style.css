@@ -1,0 +1,433 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.body {
+  background-color: black;
+}
+
+.grid-index {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "presentacion" "sobre-mi" "habilidades";
+  grid-template-rows: 500px 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.cabecera {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px rgb(240, 227, 227) solid;
+  margin: 5px;
+  transition: 0.5s;
+}
+
+.perfil:hover {
+  transform: scale(1.5);
+}
+
+/* Agrego animaciones a los item del header de todas las paginas */
+.items-menu:hover {
+  transform: scale(1.4);
+}
+
+.presentacion {
+  display: flex;
+  background-image: url(../assets/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: center;
+  grid-area: presentacion;
+}
+
+.presentacion-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  z-index: 1;
+}
+
+.fondo-opaco {
+  background-color: rgba(0, 0, 0, 0.822);
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+
+.perfil-medio {
+  height: 160px;
+  width: 160px;
+  border: 2px white solid;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+
+/* Agrego una animacion a mi foto de pefil en la seccion presentacion del Index */
+.perfil-medio:hover {
+  transform: scale(1.2);
+}
+
+.perfil-pie {
+  font-size: 70px;
+  text-align: center;
+}
+
+/* Modifique la parte de sobre mi para que el boton del curriculum funcione correctamente */
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  background-color: rgb(17, 14, 14);
+  border: 1px black solid;
+  height: fit-content;
+  padding-bottom: 5%;
+  grid-area: sobre-mi;
+}
+
+.titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  padding: 5%;
+}
+
+.parrafo {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 3%;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+/* Se modifico esto para que se pueda utilizar el boton y tenga animación */
+.curriculum {
+  width: fit-content;
+  text-align: center;
+}
+
+.curriculum-texto {
+  text-decoration: none;
+  color: black;
+}
+
+.boton {
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Agrego animacion a los botones tanto el enviar del html Contacto como al de mi curriculum en el index */
+.boton-animacion {
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.boton:hover {
+  transform: scale(1.2);
+}
+
+/* Los bordes son para guiarme en las divisiones de las seccion, luego en el resultado final no estaran*/
+.habilidades {
+  color: white;
+  text-align: center;
+  background-color: rgb(17, 14, 14);
+  grid-area: habilidades;
+}
+
+.habilidad1 {
+  margin: 3%;
+}
+
+.habilidades-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-brands {
+  width: 30px;
+  height: 30px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-right: 10px;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.pie-de-pagina {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: antiquewhite;
+  width: 100%;
+  position: absolute;
+}
+
+.conjunto-logos {
+  width: fit-content;
+  padding-right: 1%;
+}
+
+.mail {
+  padding-left: 1%;
+}
+
+.firma {
+  padding-left: 2%;
+}
+
+.firma-1 {
+  padding-right: 1%;
+}
+
+.sec-comentarios {
+  background-color: rgb(4, 4, 58);
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.comentarios {
+  display: flex;
+  background-color: rgb(189, 196, 202);
+  border: 1px solid rgb(255, 254, 254);
+  height: fit-content;
+  width: 97%;
+  border: 1px rgb(0, 0, 0) solid;
+  margin: 8px;
+  font-size: 22px;
+  padding: 1%;
+}
+
+.subtitulo {
+  font-size: 40px;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  color: rgb(179, 187, 194);
+}
+
+.nombre {
+  font-size: 27px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.avatar {
+  padding-right: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.servicios {
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(66, 66, 70);
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.servicio-izquierda {
+  display: flex;
+  background-color: rgb(158, 153, 153);
+  width: 90%;
+  height: fit-content;
+  border: 1px black solid;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+
+.servicio-derecha {
+  display: flex;
+  background-color: rgb(158, 153, 153);
+  flex-direction: row-reverse;
+  height: fit-content;
+  width: 90%;
+  border: 1px black solid;
+  margin-left: 8%;
+  font-size: 25px;
+}
+
+.proyectos-grid {
+  background-color: rgb(58, 52, 52);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  border: 1px solid black;
+}
+
+.proyecto-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-self: center;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.imagen-servicio {
+  height: 80px;
+  width: 80px;
+  padding: 2%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-casilla {
+  margin-bottom: 3%;
+  width: 60%;
+  height: 50px;
+}
+
+.formulario-casilla-mensaje {
+  display: flex;
+  width: 60%;
+  margin-bottom: 3%;
+  height: 200px;
+  font-size: 20px;
+}
+
+.sec-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(4, 4, 58);
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 50px;
+}
+
+.subtitulo-2 {
+  font-size: 40px;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: rgb(179, 187, 194);
+  margin-bottom: 5px;
+}
+
+.redes-sociales-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.red {
+  transition: all 0.5s;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Agrego animaciones en las redes de la pagina "contacto" */
+.red:hover {
+  transform: scale(1.2);
+}
+
+.pie-contacto {
+  height: 35px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .proyectos-grid {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .habilidad1 {
+    height: 150px;
+    width: 150px;
+  }
+  .habilidades-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .redes-sociales-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .red {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .item {
+    margin: 10px;
+  }
+  .proyectos-grid {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .pie-de-pagina {
+    font-size: small;
+  }
+  .fa-brands {
+    height: auto;
+    width: auto;
+  }
+  .perfil-pie {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .parrafo {
+    font-size: 20px;
+  }
+  .item {
+    font-size: 12px;
+  }
+  .servicio-derecha {
+    font-size: 15px;
+  }
+  .servicio-izquierda {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
