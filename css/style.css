@@ -8,14 +8,6 @@
   background-color: black;
 }
 
-.grid-index {
-  display: grid;
-  gap: 5px;
-  grid-template-areas: "presentacion" "sobre-mi" "habilidades";
-  grid-template-rows: 500px 1fr 1fr;
-  grid-template-columns: 1fr;
-}
-
 .cabecera {
   position: sticky;
   top: 0;
@@ -37,9 +29,59 @@
   transform: scale(1.5);
 }
 
-/* Agrego animaciones a los item del header de todas las paginas */
-.items-menu:hover {
-  transform: scale(1.4);
+.fa-brands {
+  width: 30px;
+  height: 30px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-right: 10px;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.pie-de-pagina {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: antiquewhite;
+  width: 100%;
+  position: absolute;
+}
+
+.conjunto-logos {
+  width: fit-content;
+  padding-right: 1%;
+}
+
+.mail {
+  padding-left: 1%;
+}
+
+.firma {
+  padding-left: 2%;
+}
+
+.firma-1 {
+  padding-right: 1%;
+}
+
+.grid-index {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "presentacion" "sobre-mi" "habilidades";
+  grid-template-rows: 500px 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.proyectos-grid {
+  background-color: rgb(58, 52, 52);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  border: 1px solid black;
 }
 
 .presentacion {
@@ -88,7 +130,6 @@
   text-align: center;
 }
 
-/* Modifique la parte de sobre mi para que el boton del curriculum funcione correctamente */
 .sobre-mi {
   display: flex;
   flex-direction: column;
@@ -145,7 +186,6 @@
   transform: scale(1.2);
 }
 
-/* Los bordes son para guiarme en las divisiones de las seccion, luego en el resultado final no estaran*/
 .habilidades {
   color: white;
   text-align: center;
@@ -161,44 +201,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.fa-brands {
-  width: 30px;
-  height: 30px;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-right: 10px;
-  color: whitesmoke;
-  font-size: 30px;
-}
-
-.pie-de-pagina {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: antiquewhite;
-  width: 100%;
-  position: absolute;
-}
-
-.conjunto-logos {
-  width: fit-content;
-  padding-right: 1%;
-}
-
-.mail {
-  padding-left: 1%;
-}
-
-.firma {
-  padding-left: 2%;
-}
-
-.firma-1 {
-  padding-right: 1%;
 }
 
 .sec-comentarios {
@@ -269,15 +271,6 @@
   border: 1px black solid;
   margin-left: 8%;
   font-size: 25px;
-}
-
-.proyectos-grid {
-  background-color: rgb(58, 52, 52);
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1px;
-  border: 1px solid black;
 }
 
 .proyecto-card {

@@ -1,0 +1,14 @@
+.habilidades{
+    color: white;
+    text-align: center;
+    background-color: rgb(17, 14, 14);
+    grid-area: habilidades;
+}
+.habilidad1{
+    margin: 3%;
+}
+.habilidades-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
