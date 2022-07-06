@@ -242,10 +242,12 @@
     font-size: 25px;
 }
 .proyectos-grid{
-    background-color: rgb(78, 23, 23);
+    background-color: rgb(58, 52, 52);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    border: 1px solid black;
 }
 .proyecto-card{
     margin-top: 40px;
