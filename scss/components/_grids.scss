@@ -9,7 +9,7 @@
     grid-template-columns: 1fr;
 }
 .proyectos-grid{
-    background-color: rgb(58, 52, 52);
+    background-color: $bg-pagina;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;

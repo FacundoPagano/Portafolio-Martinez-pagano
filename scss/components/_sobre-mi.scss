@@ -11,14 +11,14 @@
 }
 .titulo{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: nth($font-size, 9);
     padding: 5%;
 }
 .parrafo{
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 3%;
-    font-size: 30px;
+    font-size: nth($font-size, 5);
     margin-bottom: 3%;
 }
 /* Se modifico esto para que se pueda utilizar el boton y tenga animación */
@@ -35,7 +35,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: nth($font-size, 3);
     padding: 10px;
 }
 /* Agrego animacion a los botones tanto el enviar del html Contacto como al de mi curriculum en el index */
