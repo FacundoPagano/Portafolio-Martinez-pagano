@@ -1,0 +1,18 @@
+@mixin service($direction) {
+    display: flex;
+    flex-direction: $direction;
+    background-color:rgb(189, 196, 202);
+    width: 90%;
+    height: fit-content;
+    border: 1px black solid;
+    font-size: 25px;
+
+    @if $direction == row-reverse{
+        margin-left: 8%;
+    } @else {
+        margin-left: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+

@@ -7,9 +7,12 @@
 }
 @import 'base/listas';
 @import 'base/variables';
+@import 'base/mixins';
+@import 'base/mapas';
+@import 'base/extends';
+@import 'components/grids';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/grids';
 @import 'components/presentacion';
 @import 'components/sobre-mi';
 @import 'components/habilidades';
@@ -21,7 +24,7 @@
     padding: 1%;
 }
 .comentarios{
-    display: flex;
+    display: map-get($standard , display-standard);
     background-color: $bg-textos;
     border: 1px solid rgb(255, 254, 254);
     height: fit-content;
@@ -57,25 +60,10 @@
     padding-top: 2%;
 }
 .servicio-izquierda{
-    display: flex;
-    background-color:$bg-textos ;
-    width: 90%;
-    height: fit-content;
-    border: 1px black solid;
-    margin-left: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: nth($font-size, 4);
+    @include service(row)
 }
 .servicio-derecha{
-    display: flex;
-    background-color: $bg-textos;
-    flex-direction: row-reverse;
-    height: fit-content;
-    width: 90%;
-    border: 1px black solid;
-    margin-left: 8%;
-    font-size: nth($font-size, 4);
+    @include service(row-reverse)
 }
 .proyecto-card{
     margin-top: 40px;
@@ -91,7 +79,7 @@
     padding: 2%;
 }
 .formulario{
-    display: flex;
+    display: map-get($standard , display-standard);
     flex-direction: column;
     align-items: center;
 }
@@ -101,7 +89,7 @@
     height: 50px;
 }
 .formulario-casilla-mensaje{
-    display: flex;
+    display: map-get($standard , display-standard);
     width: 60%;
     margin-bottom: 3%;
     height: 200px;
@@ -109,7 +97,7 @@
 }
 
 .sec-contacto{
-    display: flex;
+    display: map-get($standard , display-standard);
     flex-direction: column;
     width: 100%;
     background-color: $bg-pagina;
@@ -117,7 +105,7 @@
     margin: 0 auto;
 }
 .redes-sociales{
-    display: flex;
+    display: map-get($standard , display-standard);
     flex-direction: column;
     place-items: center;
     padding-bottom: 50px;
@@ -130,7 +118,7 @@
     margin-bottom: 5px;
 }
 .redes-sociales-1{
-    display: flex;
+    display: map-get($standard , display-standard);
     justify-content: center;
     width: 100%;
 }
@@ -149,7 +137,7 @@
 @media only screen and (max-width: 1300px) {
     .proyectos-grid{
         height: fit-content;
-        display: grid;
+        display: map-get($grid-map , display-grid);
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -166,7 +154,7 @@
 }
 @media only screen and (max-width: 1000px){
     .redes-sociales-1{
-        display: flex;
+        display: map-get($standard , display-standard);
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -181,7 +169,7 @@
     .item{ margin: 10px;}
     .proyectos-grid{
         height: fit-content;
-        display: grid;
+        display: map-get($grid-map , display-grid);
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }

@@ -1,5 +1,5 @@
 .grid-index{
-    display: grid;
+    display: map-get($grid-map , display-grid);
     gap: 5px;
     grid-template-areas: 
     "presentacion"
@@ -10,7 +10,7 @@
 }
 .proyectos-grid{
     background-color: $bg-pagina;
-    display: grid;
+    display: map-get($grid-map , display-grid);
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1px;

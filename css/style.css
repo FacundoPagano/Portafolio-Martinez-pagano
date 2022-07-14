@@ -8,6 +8,28 @@
   background-color: black;
 }
 
+.fa-brands {
+  height: auto;
+  width: auto;
+}
+
+.grid-index {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "presentacion" "sobre-mi" "habilidades";
+  grid-template-rows: 500px 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.proyectos-grid {
+  background-color: rgb(4, 4, 58);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  border: 1px solid black;
+}
+
 .cabecera {
   position: sticky;
   top: 0;
@@ -30,8 +52,6 @@
 }
 
 .fa-brands {
-  width: 30px;
-  height: 30px;
   margin-top: 3%;
   margin-bottom: 3%;
   margin-right: 10px;
@@ -65,23 +85,6 @@
 
 .firma-1 {
   padding-right: 1%;
-}
-
-.grid-index {
-  display: grid;
-  gap: 5px;
-  grid-template-areas: "presentacion" "sobre-mi" "habilidades";
-  grid-template-rows: 500px 1fr 1fr;
-  grid-template-columns: 1fr;
-}
-
-.proyectos-grid {
-  background-color: rgb(4, 4, 58);
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1px;
-  border: 1px solid black;
 }
 
 .presentacion {
@@ -252,25 +255,26 @@
 
 .servicio-izquierda {
   display: flex;
+  flex-direction: row;
   background-color: rgb(189, 196, 202);
   width: 90%;
   height: fit-content;
   border: 1px black solid;
+  font-size: 25px;
   margin-left: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
-  font-size: 25px;
 }
 
 .servicio-derecha {
   display: flex;
-  background-color: rgb(189, 196, 202);
   flex-direction: row-reverse;
-  height: fit-content;
+  background-color: rgb(189, 196, 202);
   width: 90%;
+  height: fit-content;
   border: 1px black solid;
-  margin-left: 8%;
   font-size: 25px;
+  margin-left: 8%;
 }
 
 .proyecto-card {
