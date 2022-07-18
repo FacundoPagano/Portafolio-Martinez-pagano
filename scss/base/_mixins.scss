@@ -6,6 +6,7 @@
     height: fit-content;
     border: 1px black solid;
     font-size: 25px;
+    align-items: center;
 
     @if $direction == row-reverse{
         margin-left: 8%;

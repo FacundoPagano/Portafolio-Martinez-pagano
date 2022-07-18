@@ -1,3 +1,5 @@
+@import '../base/mapas';
+@import '../base/variables';
 .grid-index{
     display: map-get($grid-map , display-grid);
     gap: 5px;

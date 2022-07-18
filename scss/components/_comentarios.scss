@@ -20,6 +20,10 @@
     margin: 8px;
     font-size: nth($font-size, 3);
     padding: 1%;
+    padding-left: 15px;
+}
+.comentario{
+    padding-left: 15px;
 }
 .subtitulo{
     font-size: 40px;
@@ -32,9 +36,10 @@
     font-size: nth($font-size, 5);
     text-decoration: underline;
     padding-bottom: 5px;
+    padding-left: 15px;
 }
 .avatar{
-    padding-right: 10px;
     height: 80px;
     width: 80px;
+    border-radius: 50%;
 }

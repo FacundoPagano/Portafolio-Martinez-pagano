@@ -18,7 +18,17 @@
     @include service(row-reverse)
 }
 .imagen-servicio{
-    height: 80px;
-    width: 80px;
+    height: 128px;
+    width: 128px;
     padding: 2%;
+}
+.servicio{
+    padding-top: 10px;
+}
+.servicio-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-servicio{
+    align-self: flex-end;
 }

@@ -1,3 +1,6 @@
+@import'../base/extends';
+@import'../base/listas';
+
 .fa-brands{
     @extend %tamaño;
     margin-top: 3%;

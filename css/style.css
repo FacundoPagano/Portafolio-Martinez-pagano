@@ -52,6 +52,11 @@
 }
 
 .fa-brands {
+  height: auto;
+  width: auto;
+}
+
+.fa-brands {
   margin-top: 3%;
   margin-bottom: 3%;
   margin-right: 10px;
@@ -226,6 +231,10 @@
   text-decoration: none;
 }
 
+.card-img-top {
+  height: 250px;
+}
+
 .fa-brands {
   height: auto;
   width: auto;
@@ -247,6 +256,7 @@
   height: fit-content;
   border: 1px black solid;
   font-size: 25px;
+  align-items: center;
   margin-left: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -260,13 +270,27 @@
   height: fit-content;
   border: 1px black solid;
   font-size: 25px;
+  align-items: center;
   margin-left: 8%;
 }
 
 .imagen-servicio {
-  height: 80px;
-  width: 80px;
+  height: 128px;
+  width: 128px;
   padding: 2%;
+}
+
+.servicio {
+  padding-top: 10px;
+}
+
+.servicio-contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-servicio {
+  align-self: flex-end;
 }
 
 .fa-brands {
@@ -361,6 +385,11 @@
   margin: 8px;
   font-size: 20px;
   padding: 1%;
+  padding-left: 15px;
+}
+
+.comentario {
+  padding-left: 15px;
 }
 
 .subtitulo {
@@ -375,12 +404,13 @@
   font-size: 30px;
   text-decoration: underline;
   padding-bottom: 5px;
+  padding-left: 15px;
 }
 
 .avatar {
-  padding-right: 10px;
   height: 80px;
   width: 80px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1300px) {
