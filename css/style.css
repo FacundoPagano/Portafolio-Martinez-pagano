@@ -454,6 +454,10 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
+  .imagen-servicio {
+    height: 100px;
+    width: 100px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .pie-de-pagina {
@@ -479,6 +483,10 @@
   }
   .servicio-izquierda {
     font-size: 15px;
+  }
+  .imagen-servicio {
+    height: 70px;
+    width: 70px;
   }
 }
 
