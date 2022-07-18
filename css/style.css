@@ -87,6 +87,11 @@
   padding-right: 1%;
 }
 
+.fa-brands {
+  height: auto;
+  width: auto;
+}
+
 .presentacion {
   display: flex;
   background-image: url(../assets/Fondo.jpg);
@@ -206,43 +211,24 @@
   justify-content: center;
 }
 
-.sec-comentarios {
-  background-color: rgb(4, 4, 58);
-  height: fit-content;
-  margin: 0 auto;
-  padding: 1%;
+.fa-brands {
+  height: auto;
+  width: auto;
 }
 
-.comentarios {
-  display: flex;
-  background-color: rgb(189, 196, 202);
-  border: 1px solid rgb(255, 254, 254);
-  height: fit-content;
-  width: 97%;
-  border: 1px rgb(0, 0, 0) solid;
-  margin: 8px;
-  font-size: 20px;
-  padding: 1%;
+.proyecto-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-self: center;
 }
 
-.subtitulo {
-  font-size: 40px;
-  padding-top: 1%;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  color: rgb(179, 187, 194);
+.card-link {
+  text-decoration: none;
 }
 
-.nombre {
-  font-size: 30px;
-  text-decoration: underline;
-  padding-bottom: 5px;
-}
-
-.avatar {
-  padding-right: 10px;
-  height: 80px;
-  width: 80px;
+.fa-brands {
+  height: auto;
+  width: auto;
 }
 
 .servicios {
@@ -277,20 +263,15 @@
   margin-left: 8%;
 }
 
-.proyecto-card {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  justify-self: center;
-}
-
-.card-link {
-  text-decoration: none;
-}
-
 .imagen-servicio {
   height: 80px;
   width: 80px;
   padding: 2%;
+}
+
+.fa-brands {
+  height: auto;
+  width: auto;
 }
 
 .formulario {
@@ -356,6 +337,50 @@
 
 .pie-contacto {
   height: 35px;
+}
+
+.fa-brands {
+  height: auto;
+  width: auto;
+}
+
+.sec-comentarios {
+  background-color: rgb(4, 4, 58);
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.comentarios {
+  display: flex;
+  background-color: rgb(189, 196, 202);
+  border: 1px solid rgb(255, 254, 254);
+  height: fit-content;
+  width: 97%;
+  border: 1px rgb(0, 0, 0) solid;
+  margin: 8px;
+  font-size: 20px;
+  padding: 1%;
+}
+
+.subtitulo {
+  font-size: 40px;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  color: rgb(179, 187, 194);
+}
+
+.nombre {
+  font-size: 30px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.avatar {
+  padding-right: 10px;
+  height: 80px;
+  width: 80px;
 }
 
 @media only screen and (max-width: 1300px) {

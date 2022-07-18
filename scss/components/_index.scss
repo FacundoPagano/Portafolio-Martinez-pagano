@@ -1,0 +1,108 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/mapas';
+@import '../base/extends';
+.presentacion{
+    display: flex;
+    background-image: url(../assets/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    grid-area: presentacion;
+}
+.presentacion-contenedor{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: nth($font-size, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    z-index: 1;
+}
+.fondo-opaco{
+    background-color: rgba(0, 0, 0, 0.822);
+    position: absolute;
+    height: 500px;
+    width: 100%;
+}
+.perfil-medio{
+    height: 160px;
+    width: 160px;
+    border: 2px white solid;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+/* Agrego una animacion a mi foto de pefil en la seccion presentacion del Index */
+.perfil-medio:hover{
+    transform: scale(1.2);
+}
+.perfil-pie{
+    font-size: 70px;
+    text-align: center;
+}
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    background-color: rgb(17, 14, 14);
+    border: 1px black solid;
+    height: fit-content;
+    padding-bottom: 5%;
+    grid-area: sobre-mi;
+}
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: nth($font-size, 9);
+    padding: 5%;
+}
+.parrafo{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3%;
+    font-size: nth($font-size, 5);
+    margin-bottom: 3%;
+}
+/* Se modifico esto para que se pueda utilizar el boton y tenga animación */
+.curriculum{
+    width: fit-content;
+    text-align: center;
+}
+.curriculum-texto{
+    text-decoration: none;
+    color: black;
+}
+.boton{
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: nth($font-size, 3);
+    padding: 10px;
+}
+/* Agrego animacion a los botones tanto el enviar del html Contacto como al de mi curriculum en el index */
+.boton-animacion{
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+.boton:hover{
+    transform: scale(1.2);
+}
+.habilidades{
+    color: white;
+    text-align: center;
+    background-color: rgb(17, 14, 14);
+    grid-area: habilidades;
+}
+.habilidad1{
+    margin: 3%;
+}
+.habilidades-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

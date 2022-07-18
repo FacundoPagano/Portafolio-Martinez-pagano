@@ -1,0 +1,14 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/mapas';
+@import '../base/extends';
+
+.proyecto-card{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+.card-link{
+    text-decoration: none;
+}

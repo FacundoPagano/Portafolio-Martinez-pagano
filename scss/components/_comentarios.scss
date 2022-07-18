@@ -1,0 +1,40 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/mapas';
+@import '../base/extends';
+
+.sec-comentarios{
+    background-color: $bg-pagina;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 1%;
+}
+.comentarios{
+    display: map-get($standard , display-standard);
+    background-color: $bg-textos;
+    border: 1px solid rgb(255, 254, 254);
+    height: fit-content;
+    width: 97%;
+    border: 1px rgb(0, 0, 0) solid;
+    margin: 8px;
+    font-size: nth($font-size, 3);
+    padding: 1%;
+}
+.subtitulo{
+    font-size: 40px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    color: rgb(179, 187, 194);
+}
+.nombre{
+    font-size: nth($font-size, 5);
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.avatar{
+    padding-right: 10px;
+    height: 80px;
+    width: 80px;
+}
